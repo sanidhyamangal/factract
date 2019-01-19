@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fact</title>
+</head>
+<body>
+	{% for para in text %}
+    <p>{{para}}</p>
+	{% endfor %}
+	<h2><a href="{{ url_for('card') }}">Click here for card</a></h2>
+	<img src="{{ img_url }}">
+</body>
+</html>
