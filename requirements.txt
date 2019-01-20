@@ -10,4 +10,4 @@ summarizer
 wikipedia
 xlrd
 nltk
-pil
+pillow
