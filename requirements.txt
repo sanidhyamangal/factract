@@ -10,3 +10,4 @@ summarizer
 wikipedia
 xlrd
 nltk
+PIL

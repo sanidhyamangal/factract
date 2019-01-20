@@ -216,6 +216,10 @@ input, select, textarea {
 		clear: both;
 	}
 
+	.col-8 col-12-medium{
+		border-radius: 50%;
+	}
+
 /* Container */
 
 	.container {
@@ -2631,9 +2635,9 @@ input, select, textarea {
 	}
 
 div#loading{
-	width: 35px;
-	height: 35px;
-	display: none;
-	background: url('../static/loader.gif') no-repeat;
+	width: 800px;
+	height: 800px;
+	display: block;
+	background: url('../loader.gif') no-repeat;
 	cursor: wait;
 }

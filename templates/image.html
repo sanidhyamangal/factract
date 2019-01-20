@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FacTract</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet">
+</head>
+<body style="background-image:url('./static/piper.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="factract-head" style="background-color: rgba(0,0,0,.5); font-family: 'Patrick Hand SC', cursive;">
+			<h1 style="margin-bottom: 50px; margin-left: 100px;color: white;font-size: 60px;">FacTract - Graphacts</h1>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+  		{% for image in images %}
+				<img src="data:image/jpeg;base64,{{ image }}" style="padding: 20px; border: 20px solid rgba(255, 255, 255, .5); border-radius: 10%;margin-bottom: 20px;">
+		{% endfor %} 
+		</div>
+		<div class="col-md-3">
+		</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+	<div class="footer-factract" style="background-color: rgba(0,0,0,.7);padding: 30px; color: white; text-align: center; font-size: 30px; margin-top: 20px;">
+		<p style="font-family: 'Just Me Again Down Here', cursive;">Made By : Pied Piper | FacTract</p>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

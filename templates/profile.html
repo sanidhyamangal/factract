@@ -5,6 +5,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../static/css/fact.css" />
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
 	</head>
 	<body class="subpage">
 		<div id="page-wrapper">
@@ -15,7 +18,11 @@
 						<div class="row">
 							<div class="col-12">
 								<!-- Logo -->
-									<h1><a href="/" id="logo">FactTract</a></h1>
+									<h1 style="font-family: 'Just Another Hand', cursive; font-size: 80px; margin-left: 100px; letter-spacing: 5px;"><a href="/" id="logo">FactTract</a></h1>
+
+									<nav id="nav">
+										<h3 style="font-family: 'Boogaloo', cursive; font-size: 20px; margin-right: 100px;letter-spacing: 5px;"><a href="/images">Graphacts</a></h3>
+									</nav>
 							</div>
 						</div>
 					</div>
@@ -25,21 +32,21 @@
 				<section id="content">
 					<div class="container">
 						<div class="row">
-							<div class="col-4 col-12-medium">
+							<div class="col-4 col-12-medium"  style="border-radius: 25%;">
 
 								<!-- Sidebar -->
-									<section>
+									<section style="border: 1px solid black; box-shadow: 6px 6px 5px black;">
 										<header>
-											<h2>{{ user_input }}</h2>
+											<h2 style="font-family: 'Just Another Hand', cursive; text-align: center; font-size: 45px; background-color: palegreen;">{{ user_input }}</h2>
 										</header>
-										<img src="{{ img_url }}"  alt="" srcset="" width="320" height="256">
+										<img src="{{ img_url }}"  alt="" srcset="" width="320" height="256" style="border-radius: 50%; border: 2px solid black;">
 									</section>
-									<section>
+									<section style="border: 1px solid black; box-shadow: 6px 6px 5px black;">
 										<header>
-											<h2>Flash Card</h2>
+											<h2 style="font-family: 'Kaushan Script', cursive; background-color: palegreen;">Flash Card</h2>
 										</header>
 										{% for item in card_text %}
-  									<p>{{item}}</p>
+  									<p style="font-family: 'Boogaloo', cursive;">{{item}}</p>
   									{% endfor %}
 									</section>
 
@@ -47,13 +54,13 @@
 							<div class="col-8 col-12-medium imp-medium">
 
 								<!-- Main Content -->
-									<section>
+									<section style="border: 1px solid black; box-shadow: 6px 6px 5px black;">
 										<header>
-											<h2>Facts </h2>
-											<h3>Related to {{ user_input }}</h3>
+											<h2 style="font-family: 'Just Another Hand', cursive;font-size: 45px;background-color: palegreen;">Facts </h2>
+											<h3 style="font-family: 'Kaushan Script', cursive;">Related to {{ user_input }}</h3>
 										</header>
 										{% for para in text %}
-									    	<p>{{para}}</p>
+									    	<p style="font-family: 'Boogaloo', cursive;">{{para}}</p>
 										{% endfor %}
 									</section>
 
@@ -73,12 +80,6 @@
 								<!-- Blurb -->
 									<section>
 										<h2>A Fact Extractor Tool</h2>
-										<p>
-											Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
-											varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
-											dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
-											lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
-										</p>
 									</section>
 
 							</div>

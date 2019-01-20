@@ -20,7 +20,7 @@ def get_facts(user_input):
     for s in summ:
         clean_list.append(remove_grabage(s)[0].replace("\n", " "))
     
-    summ_txt = ' '.join(word.encode('utf-8') for word in clean_list[:10])
-    summ_txt = summ_txt.replace(". ", ".\n\n")
+    # summ_txt = ' '.join(word.encode('utf-8') for word in clean_list[:10])
+    # summ_txt = summ_txt.replace(". ", ".\n\n")
     
-    return summ_txt
+    return clean_list

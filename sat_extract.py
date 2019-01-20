@@ -11,14 +11,23 @@ def fact_extract(user_input):
 
 	#user_input = str(raw_input('Enter input: ')) this will come from the front end instead of cli
 	url = wikipedia.page(user_input).url
-
+	error=''
 	# s = Summarize(user_input, wikipedia.page(user_input).content) is to summarize if the url is not available
 	# this one is for extracting the content directly from the keyword entered by the user
 	s = SummarizeUrl(url)
 
-	summ = ' '.join(word for word in s)
+	try:
+		summ = ' '.join(word for word in s)	
+	# except TypeError:
+	# 	return error
+	except wikipedia.exceptions.PageError as e:
+		# new_term = wikipedia.search(user_input)[0]
+		# # print(new_term)
+		# fact_extract(new_term)
+		print e.options
 	#summ = summ.replace("]","")
-
+	
+	
 	#non reg ex way of dealing with expressions
 	def removeNestedParentheses(s):
 	    ret = ''
