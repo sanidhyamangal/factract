@@ -8,7 +8,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
-	</head>
+	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+</head>
 	<body class="subpage">
 		<div id="page-wrapper">
 
@@ -18,10 +19,11 @@
 						<div class="row">
 							<div class="col-12">
 								<!-- Logo -->
-									<h1 style="font-family: 'Just Another Hand', cursive; font-size: 80px; margin-left: 100px; letter-spacing: 5px;"><a href="/" id="logo">FactTract</a></h1>
+									<h1 style="font-family: 'Nothing You Could Do', cursive; font-size: 55px; margin-left: 20px; letter-spacing: 5px;"><a href="/" id="logo">FacTract !</a></h1> 
+									<img src="./static/phat.png" style="height: 28%; width: 10%; margin-top: 8px;">
 
 									<nav id="nav">
-										<h3 style="font-family: 'Boogaloo', cursive; font-size: 20px; margin-right: 100px;letter-spacing: 5px;"><a href="/images">Graphacts</a></h3>
+										<h3 style="font-family: 'Boogaloo', cursive; font-size: 20px; margin-right: 100px;letter-spacing: 5px; color: white;"><a href="/images">>> Graphacts!!</a></h3>
 									</nav>
 							</div>
 						</div>
@@ -37,13 +39,13 @@
 								<!-- Sidebar -->
 									<section style="border: 1px solid black; box-shadow: 6px 6px 5px black;">
 										<header>
-											<h2 style="font-family: 'Just Another Hand', cursive; text-align: center; font-size: 45px; background-color: palegreen;">{{ user_input }}</h2>
+											<h2 style="font-family: 'Just Another Hand', cursive; text-align: center; font-size: 45px; background-color: white;">{{ user_input }}</h2>
 										</header>
-										<img src="{{ img_url }}"  alt="" srcset="" width="320" height="256" style="border-radius: 50%; border: 2px solid black;">
+										<img src="{{ img_url }}"  alt="" srcset="" width="320" height="256" style="border-radius: 40%; border: 1px dotted black;">
 									</section>
 									<section style="border: 1px solid black; box-shadow: 6px 6px 5px black;">
 										<header>
-											<h2 style="font-family: 'Kaushan Script', cursive; background-color: palegreen;">Flash Card</h2>
+											<h2 style="font-family: 'Kaushan Script', cursive; background-color: white;">Flash Card</h2>
 										</header>
 										{% for item in card_text %}
   									<p style="font-family: 'Boogaloo', cursive;">{{item}}</p>
@@ -56,30 +58,12 @@
 								<!-- Main Content -->
 									<section style="border: 1px solid black; box-shadow: 6px 6px 5px black;">
 										<header>
-											<h2 style="font-family: 'Just Another Hand', cursive;font-size: 45px;background-color: palegreen;">Facts </h2>
-											<h3 style="font-family: 'Kaushan Script', cursive;">Related to {{ user_input }}</h3>
+											<h2 style="font-family: 'Just Another Hand', cursive;font-size: 45px;background-color: white;">Facts </h2>
+											<h3 style="font-family: 'Kaushan Script', cursive; color: black;">Related to {{ user_input }}</h3>
 										</header>
 										{% for para in text %}
-									    	<p style="font-family: 'Boogaloo', cursive;">{{para}}</p>
+									    	<p style="font-family: 'Boogaloo', cursive; font-size: 20px;">{{para}}</p>
 										{% endfor %}
-									</section>
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-							</div>
-							<div class="col-4 col-12-medium imp-medium">
-
-								<!-- Blurb -->
-									<section>
-										<h2>A Fact Extractor Tool</h2>
 									</section>
 
 							</div>

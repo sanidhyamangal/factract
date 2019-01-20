@@ -12,7 +12,7 @@ def create_imgs(user_input):
 	clean_list = san_extract.get_facts(user_input)
 	empty_list = []
   	for i in clean_list[:6]:
-  		colors = ['yellow', 'palegreen', 'blue', 'orange']
+  		colors = ['yellow', 'palegreen', 'blue', 'orange','pink']
   		image_path = './static/'+ random.choice(colors) +'.jpg' 
 		image = Image.open(image_path)
 		draw = ImageDraw.Draw(image)
