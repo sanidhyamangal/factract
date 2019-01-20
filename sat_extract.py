@@ -18,13 +18,8 @@ def fact_extract(user_input):
 
 	try:
 		summ = ' '.join(word for word in s)	
-	# except TypeError:
-	# 	return error
-	except wikipedia.exceptions.PageError as e:
-		# new_term = wikipedia.search(user_input)[0]
-		# # print(new_term)
-		# fact_extract(new_term)
-		print e.options
+	except TypeError:
+		return error
 	#summ = summ.replace("]","")
 	
 	
