@@ -42,8 +42,9 @@ def make_card(user_input):
 	# 	#print st
 	# 	st_list.append(st)
 	# return st_list[1:]
-	for x in range(7):
-		info_box[x] = removeNestedParentheses(info_box[x])
+	if(len(info_box)>2):
+		for x in range(7):
+			info_box[x] = removeNestedParentheses(info_box[x])
 	return info_box[1:]
 	# return info_box
 
